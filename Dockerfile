@@ -1,7 +1,7 @@
 FROM python:3.10-alpine
 
 
-WORKDIR /urs/src/code
+WORKDIR /usr/src/code
 
 
 RUN pip install --upgrade pip
