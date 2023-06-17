@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'account.appas.AccountConfig',
+    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [
@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'CustomUser.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get("POSTGRES_NAME", default='custom_user_db'),
-	'USER': os.environ.get("POSTGRES_USER", default='postgres'),
-        'PASSWORD': os.environ.get("POSTGRES_PASSWORD", default='postgres'),
-        'HOST': os.environ.get("POSTGRES_HOST", default='db'),
-        'PORT': os.environ.get("POSTGRES_PORT", default=5432),
+        'NAME': os.environ.get("POSTGRES_NAME"),
+	'USER': os.environ.get("POSTGRES_USER"),
+        'PASSWORD': os.environ.get("POSTGRES_PASSWORD"),
+        'HOST': os.environ.get("POSTGRES_HOST"),
+        'PORT': os.environ.get("POSTGRES_PORT"),
          
     }
 }
